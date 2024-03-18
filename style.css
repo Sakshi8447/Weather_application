@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    
+}
+
+.main .left{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    opacity: 1;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(61,125,207,1) 96%, rgba(67,130,208,1) 100%);
+}
+
+.main .right{
+    width: 25%;
+    background-color: #ededed;
+    opacity: 1;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.left .header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.header .search{
+    border-radius: 30px;
+    background-color: white;
+    padding: 0 10px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+#search-icon{
+    cursor: pointer;
+}
+.header .search input{
+    border: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 22px;
+    
+}
+.header #date{
+    font-size: 24px;
+    font-family: sans-serif;
+}
+.temprature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.temprature .icon {
+    margin: 20px;
+}
+.temprature .tempwithmessage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.temprature .tempwithmessage #temp{
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 0.8;
+}
+
+.temprature .tempwithmessage #message{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.whr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+.whr .common {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#wind, #humidity, #rain{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.fivedaysforecast{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.fivedaysforecast .days {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.fivedaysforecast .special {
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+}
+.fivedaysforecast .days .weekname, .tempdays{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+
+.right #greetText{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    font-size: 30px;
+    font-weight: 700;
+    align-items: center;
+}
+#time{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    font-size: 30px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.right .forecast-info{
+   
+
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    font-size: 25px;
+    font-weight: 700;
+    color: green;
+    text-align: center;
+}
+.right .hourly-forecast{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    flex-wrap: wrap; */
+    margin-top: 1rem;
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.right .hourly-forecast .hourly{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+}
+
+.right .hourly-forecast .hourly span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ .degree{
+    font-size: 17px;
+    font-weight: 600;
+
+}
+#error {
+    display: none;
+    color : red;
+    font-size: 20px;
+    width: 300px;
+    margin: auto;
+}

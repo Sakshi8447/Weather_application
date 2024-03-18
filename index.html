@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- External CSS LINK -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/e9b97d0046.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- LEFT Container (big 75%) -->
+    <div class="main">
+      <div class="left">
+        <div class="header">
+          <!-- search field  -->
+          <div class="search">
+            <input id="search" type="search" placeholder="enter the city" />
+            <i
+              id="search-icon"
+              class="fa fa-search"
+              style="font-size: 24px"
+            ></i>
+          </div>
+          <!-- Date Field -->
+          <div id="date">13.12.2023</div>
+        </div>
+        <p id="error">Please Enter The Correct City!</p>
+        <div class="temprature">
+          <div class="icon">
+            <i id="icon" class="fa-solid fa-sun" style="font-size: 140px"></i>
+          </div>
+          <!-- show the city temp with the message -->
+          <div class="tempwithmessage">
+            <span id="temp">20&deg;C</span>
+            <span id="message">It's Sunny</span>
+          </div>
+          <!-- show the icon according to the temp -->
+        </div>
+
+        <!-- Wind Speed, Humidity, Chances of rain -->
+        <div class="whr">
+          <div class="wind common">
+            <i class="fa-solid fa-wind" style="font-size: 24px"></i>
+            <span id="wind">20 km/h</span>
+            <span>Wind</span>
+          </div>
+
+          <div class="humidity common">
+            <i class="fa-solid fa-water" style="font-size: 24px"></i>
+            <span id="humidity">20%</span>
+            <span>Humidity</span>
+          </div>
+
+          <div class="rain common">
+            <i class="fa-solid fa-cloud-sun-rain" style="font-size: 24px"></i>
+            <span id="rain">20%</span>
+            <span>Chances of rain</span>
+          </div>
+        </div>
+
+        <!-- 5 days forecast -->
+        <div class="fivedaysforecast">
+          <div class="days special">
+            <span class="weekname">Today</span> <span> Today </span>
+            <span class="tempdays">20 C</span>
+            <span> Sunny </span>
+          </div>
+          <div class="days">
+            <span class="weekname">Thu</span>
+            <span class="tempdays">20 C</span>
+            <span> Rainy </span>
+          </div>
+          <div class="days">
+            <span class="weekname">Fri</span>
+            <span class="tempdays">20 C</span>
+            <span> Cloudy </span>
+          </div>
+          <div class="days">
+            <span class="weekname">Sat</span>
+            <span class="tempdays">20 C</span>
+            <span>Rainy</span>
+          </div>
+          <div class="days">
+            <span class="weekname">Sun</span>
+            <span class="tempdays">20 C</span>
+            <span>Mist</span>
+          </div>
+          <div class="days">
+            <span class="weekname">Mon</span>
+            <span class="tempdays">20 C</span>
+            <span>Sunny</span>
+          </div>
+        </div>
+      </div>
+      <!-- Right Container -->
+      <div class="right">
+        <div id="greetText">Good Morning !</div>
+        <div id="time">8:11 PM</div>
+
+        <div class="forecast-info">Hourly forecast For Next 24 Hours</div>
+        <div class="hourly-forecast">
+          <!-- time temp message -->
+          <div class="hourly">
+            <span class="time_hour">9:00 PM</span>
+            <span class="temp_hour">20&deg;C</span>
+            <span class="weathertype_hour">Rainy</span>
+          </div>
+          <div class="hourly">
+            <span class="time_hour">10:00 PM</span>
+            <span class="temp_hour">20&deg;C</span>
+            <span class="weathertype_hour">Sunny</span>
+          </div>
+          <div class="hourly">
+            <span class="time_hour">11:00 PM</span>
+            <span class="temp_hour">20&deg;C</span>
+            <span class="weathertype_hour">Mist</span>
+          </div>
+          <div class="hourly">
+            <span class="time_hour">12:00 AM</span>
+            <span class="temp_hour">20&deg;C</span>
+            <span class="weathertype_hour">Cloudy</span>
+          </div>
+          <div class="hourly">
+            <span class="time_hour">1:00 AM</span>
+            <span class="temp_hour">20&deg;C</span>
+            <span class="weathertype_hour">Rainy</span>
+          </div>
+          <div class="hourly">
+            <span class="time_hour">2:00 AM</span>
+            <span class="temp_hour">20&deg;C</span>
+            <span class="weathertype_hour">Mist</span>
+          </div>
+          <div class="hourly">
+            <span class="time_hour">2:00 AM</span>
+            <span class="temp_hour">20&deg;C</span>
+            <span class="weathertype_hour">Mist</span>
+          </div>
+          <div class="hourly">
+            <span class="time_hour">2:00 AM</span>
+            <span class="temp_hour">20&deg;C</span>
+            <span class="weathertype_hour">Mist</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- External JS Link   -->
+    <script src="./index.js"></script>
+  </body>
+</html>
